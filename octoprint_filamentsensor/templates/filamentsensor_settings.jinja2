@@ -1,0 +1,63 @@
+<form>
+    <h2>Filament Sensor Configuration</h2>
+    <br/>
+    <div>
+        <label for="pin_select">GPIO Pin: </label>
+        <select id="pin_select" data-bind="value: gpio_pin">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+        </select><br/>
+        <label for="mode_select">Mode: </label>
+        <select id="mode_select" data-bind="value: mode">
+            <option value="GPIO.RISING">Normally Open</option>
+            <option value="GPIO.FALLING">Normally Closed</option>
+        </select><br/>
+        <label for="mode_select">Pull Up/Down Resistor: </label>
+        <select id="mode_select" data-bind="value: pull_up_down">
+            <option value="GPIO.PUD_DOWN">Pull Down</option>
+            <option value="GPIO.PUD_UP">Pull Up</option>
+        </select><br/>
+        <br/>
+        <label>Send Email</label>
+        <label class="switch">
+            <input type="checkbox" data-bind="checked: send_mail">
+            <span class="slider round"></span>
+        </label><br/>
+        <label for="mail_text_part">Email Text Part</label>
+        <textarea id="mail_text_part" data-bind="value: mail_text_part"></textarea><br/>
+        <label for="mail_html_part">Email Text Part</label>
+        <textarea id="mail_html_part" data-bind="value: mail_html_part"></textarea><br/>
+        <label for="server_txt">Server Address</label>
+        <input type="text" id="server_txt" data-bind="textInput: mail_server"><br/>
+        <label for="port_txt">Server Port</label>
+        <input type="text" id="port_txt" data-bind="textInput: mail_port"><br/>
+        <label for="user_txt">Sender Username</label>
+        <input type="text" id="user_txt" data-bind="textInput: mail_user"><br/>
+        <label for="password_txt">Sender Password</label>
+        <input type="password" id="password_txt" data-bind="textInput: mail_password"><br/>
+    </div>
+</form>
